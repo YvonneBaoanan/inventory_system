@@ -14,9 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/word', 'ReportsController@word');
-	Route::get('/excel', 'ReportsController@excel');
-
 Route::get('/equipments', 'EquipmentsController@index');
 	Route::get('/equipments/add', 'EquipmentsController@create');
 	Route::post('/equipments/store', 'EquipmentsController@store');
